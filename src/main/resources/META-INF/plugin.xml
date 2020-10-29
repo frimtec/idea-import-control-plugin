@@ -1,0 +1,17 @@
+<idea-plugin>
+    <id>com.github.frimtec.idea-import-control-plugin</id>
+    <name>Import Control</name>
+    <vendor email="frimtec@gmx.ch" url="https://github.com/frimtec">frimTEC</vendor>
+
+    <description><![CDATA[
+        Inspection rule for java import control.
+    ]]></description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <inspectionToolProvider implementation="com.github.frimtec.idea.plugin.importcontrol.ImportControlInspectionToolProvider"/>
+    </extensions>
+</idea-plugin>
