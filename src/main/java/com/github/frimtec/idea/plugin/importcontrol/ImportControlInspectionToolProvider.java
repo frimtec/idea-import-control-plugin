@@ -7,7 +7,6 @@ import org.jetbrains.annotations.NotNull;
 public class ImportControlInspectionToolProvider implements InspectionToolProvider {
     @Override
     public @NotNull Class<? extends LocalInspectionTool>[] getInspectionClasses() {
-        //noinspection unchecked
         return new Class[]{ImportControlInspection.class};
     }
 }
