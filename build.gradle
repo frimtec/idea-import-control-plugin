@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'com.github.frimtec'
-version '1.0.0-SNAPSHOT'
+version '1.0.0'
 
 repositories {
     mavenCentral()
@@ -19,6 +19,11 @@ intellij {
     version '2020.2.3'
     plugins = ['java']
 }
+
+publishPlugin {
+    token = System.getenv("ORG_GRADLE_PROJECT_intellijPublishToken")
+}
+
 patchPluginXml {
     changeNotes """
 <ul>
