@@ -1,4 +1,6 @@
 # IntelliJ-IDEA Import Control Plugin 
+![Icon](images/icon.PNG)
+
 [![Build Status](https://travis-ci.com/frimtec/idea-import-control-plugin.svg?branch=main)](https://travis-ci.com/frimtec/idea-import-control-plugin) 
 [![license](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
@@ -17,7 +19,7 @@ Packages of modules that shall be exported to other modules can be annotated wit
 
 ## Configuration 
 ### Package export annotation
-Defines the package annotation that flags the package as module export (default ```com.github.frimtec.libraries.importcontrol.api.ExportPackage```)
+Defines the package annotation that flags the package as module export (default ```com.github.frimtec.libraries.importcontrol.api.ExportPackage```).
 
 ### Root packages
-Defines root package (or several if separated by ';') of your multi module project (only references to these root packages will be analysed) 
+Defines root package (or several if separated by ';') of your multi module project (only references to these root packages will be analysed). 
