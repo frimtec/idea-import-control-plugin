@@ -3,7 +3,7 @@ plugins {
     id 'org.jetbrains.intellij' version '0.5.1'
 }
 
-group 'org.example'
+group 'com.github.frimtec'
 version '1.0.0-SNAPSHOT'
 
 repositories {
@@ -11,7 +11,7 @@ repositories {
 }
 
 dependencies {
-    compile group: 'com.github.frimtec', name: 'import-control', version: '1.0.1'
+    compile group: 'com.github.frimtec', name: 'import-control-api', version: '1.1.0'
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
 

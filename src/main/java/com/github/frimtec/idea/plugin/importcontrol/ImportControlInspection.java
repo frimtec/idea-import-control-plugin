@@ -1,6 +1,7 @@
 package com.github.frimtec.idea.plugin.importcontrol;
 
 import com.github.frimtec.idea.plugin.importcontrol.OptionDialogHelper.Option;
+import com.github.frimtec.libraries.importcontrol.api.ExportPackage;
 import com.intellij.codeHighlighting.HighlightDisplayLevel;
 import com.intellij.codeInspection.LocalInspectionTool;
 import com.intellij.codeInspection.ProblemsHolder;
@@ -21,7 +22,7 @@ public class ImportControlInspection extends LocalInspectionTool {
 
     @SuppressWarnings({"WeakerAccess", "PublicField"})
     @NonNls
-    public String exportAnnotation = "com.github.frimtec.libraries.importcontrol.api.ExportPackage";
+    public String exportAnnotation = ExportPackage.class.getName();
 
     @SuppressWarnings({"WeakerAccess", "PublicField"})
     @NonNls
