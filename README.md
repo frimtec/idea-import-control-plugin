@@ -16,7 +16,7 @@ This is where [Import Control](href="https://github.com/frimtec/import-control/b
 Packages of modules that shall be exported to other modules can be annotated with ```@ExportPackage``` (or any other annotation of your choice). While editing in the IDE imports to non exported classes from other modules are immediatly marked as errors.
                 
 ## How to use
-* Install the Plugin ```Import Control``` from the Jetbrains Plugin-Repository.
+* Install the Plugin [Import Control](https://plugins.jetbrains.com/plugin/15308-import-control) from the Jetbrains Plugin-Repository.
 * Configure the inspection rule ```Import/reference of module private classes``` (in group Java / Visibility).
 
 ## Configuration 
