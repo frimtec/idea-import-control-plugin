@@ -1,5 +1,5 @@
 # IntelliJ-IDEA Import Control Plugin 
-[![JetBrains Plugin](./docs/badge-jetbrains-website.svg)](https://plugins.jetbrains.com/plugin/15308-import-control)
+![JetBrains IntelliJ Plugins](https://img.shields.io/jetbrains/plugin/v/15308-import-control)
 [![Build Status](https://travis-ci.com/frimtec/idea-import-control-plugin.svg?branch=main)](https://travis-ci.com/frimtec/idea-import-control-plugin) 
 [![license](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
@@ -15,6 +15,8 @@ If modules are structured into various packages, and only dedicated packages sho
 With JDK 9 JPMS was introduced to solve this issue. Using JPMS in a project is not an easy task and sometimes even not possible due to runtime restrictions.
 This is where [Import Control](href="https://github.com/frimtec/import-control/blob/main/README.md) comes to rescue. It fully supports the need for import control between modules but with no runtime impact nor restrictions.
 Packages of modules that shall be exported to other modules can be annotated with ```@ExportPackage``` (or any other annotation of your choice). While editing in the IDE imports to non exported classes from other modules are immediatly marked as errors.
+
+The ```@ExportPackage``` annotation is from the project [Import Control](https://github.com/frimtec/import-control) and is available on [maven central](https://search.maven.org/artifact/com.github.frimtec/import-control-api).
                 
 ## How to use
 * Install the Plugin [Import Control](https://plugins.jetbrains.com/plugin/15308-import-control) from the Jetbrains Plugin-Repository.
