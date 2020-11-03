@@ -135,8 +135,12 @@ public class ImportControlInspection extends LocalInspectionTool {
             }
 
             private String findPackageName(PsiClass psiClass) {
-                String qualifiedName = psiClass.getQualifiedName();
+                String qualifiedName = unwrapOuterClass(psiClass).getQualifiedName();
                 return qualifiedName.substring(0, qualifiedName.lastIndexOf("."));
+            }
+
+            private PsiClass unwrapOuterClass(PsiClass psiClass) {
+                return psiClass.getContainingClass() != null ? unwrapOuterClass(psiClass.getContainingClass()) : psiClass;
             }
         };
     }
