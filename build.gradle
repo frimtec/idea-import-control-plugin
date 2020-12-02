@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'com.github.frimtec'
-version '1.0.2'
+version '1.1.0'
 
 repositories {
     mavenCentral()
@@ -27,6 +27,8 @@ publishPlugin {
 patchPluginXml {
     changeNotes """
 <ul>
+      <li>1.1.0 Support for Idea 2020.3</li>
+      <li>1.0.2 Fix various exceptions</li>
       <li>1.0.1 Fix NPE</li>
       <li>1.0.0 Inital version</li>
 </ul>      
