@@ -45,3 +45,8 @@ jobs:
           asset_path: build/distributions/idea-import-control-plugin-${{ steps.get_version.outputs.VERSION }}.zip
           asset_name: idea-import-control-plugin-${{ steps.get_version.outputs.VERSION }}.zip
           asset_content_type: application/zip
+
+      - name: Publish Plugin on Jetbrains Marketplace
+        run: ./gradlew publishPlugin
+        env:
+          ORG_GRADLE_PROJECT_intellijPublishToken: ${{ secrets.INTELLIJ_PUBLISH_TOKEN }}
