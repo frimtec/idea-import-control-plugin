@@ -1,7 +1,7 @@
 # IntelliJ-IDEA Import Control Plugin 
 [![JetBrains Plugins](https://img.shields.io/jetbrains/plugin/v/15308)](https://plugins.jetbrains.com/plugin/15308-import-control)
-https://img.shields.io/jetbrains/plugin/d/12382
-https://img.shields.io/jetbrains/plugin/r/rating/12382
+![Downloads](https://img.shields.io/jetbrains/plugin/d/12382)
+![Rating](https://img.shields.io/jetbrains/plugin/r/rating/12382)
 
 [![license](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
