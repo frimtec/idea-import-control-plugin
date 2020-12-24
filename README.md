@@ -1,5 +1,5 @@
 # IntelliJ-IDEA Import Control Plugin 
-[![JetBrains IntelliJ Plugins](https://img.shields.io/jetbrains/plugin/v/15308-import-control)](https://plugins.jetbrains.com/plugin/15308-import-control)
+[![JetBrains Plugins](https://img.shields.io/jetbrains/plugin/v/15308)](https://plugins.jetbrains.com/plugin/15308-import-control)
 [![license](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 [![Build](https://github.com/frimtec/idea-import-control-plugin/workflows/Build/badge.svg)](https://github.com/frimtec/idea-import-control-plugin/actions?query=workflow%3ABuild)
