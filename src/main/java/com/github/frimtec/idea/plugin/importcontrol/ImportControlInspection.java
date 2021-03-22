@@ -145,6 +145,11 @@ public class ImportControlInspection extends LocalInspectionTool {
             private boolean isOtherModule(PsiJavaCodeReferenceElement reference, PsiClass psiClass) {
                 Module moduleCaller = ModuleUtilCore.findModuleForFile(reference.getContainingFile());
                 Module moduleCallee = ModuleUtilCore.findModuleForFile(psiClass.getContainingFile());
+                if(moduleCaller == null) {
+                  LOGGER.warn(String.format("Caller reference not in module => reference ignored; Name: %s, Text: %s",
+                          reference.getQualifiedName(), reference.getText()));
+                  return false;            
+                }
                 return !moduleCaller.equals(moduleCallee);
             }
 
