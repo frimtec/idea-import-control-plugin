@@ -46,39 +46,6 @@ public class ImportControlInspection extends LocalInspectionTool {
             })
     );
 
-    @Nls
-    @NotNull
-    @Override
-    @SuppressWarnings("MethodDoesntCallSuperMethod")
-    public String getDisplayName() {
-        return "Import/reference of module private classes";
-    }
-
-    @Override
-    @SuppressWarnings("MethodDoesntCallSuperMethod")
-    public boolean isEnabledByDefault() {
-        return false;
-    }
-
-    @NotNull
-    @Override
-    @SuppressWarnings("MethodDoesntCallSuperMethod")
-    public HighlightDisplayLevel getDefaultLevel() {
-        return HighlightDisplayLevel.ERROR;
-    }
-
-    @Override
-    @SuppressWarnings("MethodDoesntCallSuperMethod")
-    public @Nls(capitalization = Nls.Capitalization.Sentence) @NotNull String getGroupDisplayName() {
-        return "";
-    }
-
-    @Override
-    @SuppressWarnings("MethodDoesntCallSuperMethod")
-    public @Nls(capitalization = Nls.Capitalization.Sentence) @NotNull String[] getGroupPath() {
-        return new String[]{"Java", "Visibility"};
-    }
-
     @Override
     public void readSettings(@NotNull Element node) {
         super.readSettings(node);
