@@ -28,7 +28,7 @@ repositories {
 }
 dependencies {
     detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:1.17.1")
-    implementation("com.github.frimtec:import-control-api:1.1.0")
+    implementation("com.github.frimtec:import-control-api:1.1.1")
 }
 
 // Configure gradle-intellij-plugin plugin.
