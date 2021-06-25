@@ -11,7 +11,9 @@ jobs:
     name: Publish Plugin
     runs-on: ubuntu-latest
     steps:
-      # Setup Java 1.8 environment for the next steps
+      - uses: actions/checkout@v2
+
+      # Setup Java 11 environment for the next steps
       - name: Setup Java
         uses: actions/setup-java@v2
         with:
@@ -44,8 +46,9 @@ jobs:
     needs: publish
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
 
-      # Setup Java 1.8 environment for the next steps
+      # Setup Java 11 environment for the next steps
       - name: Setup Java
         uses: actions/setup-java@v2
         with:
