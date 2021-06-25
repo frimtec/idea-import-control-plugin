@@ -3,25 +3,16 @@
     <name>Import Control</name>
     <vendor email="frimtec@gmx.ch" url="https://github.com/frimtec">frimTEC</vendor>
 
-    <idea-version since-build="202.0"/>
-
-    <description><![CDATA[
-        <p>Inspection rule for Java <a href="https://github.com/frimtec/import-control/blob/main/README.md">Import Control</a></p>
-        <br>
-        <p>Reports imports and references to module private classes (<a href="https://github.com/frimtec/idea-import-control-plugin/blob/main/README.md">Documentation</a>).</p>
-        <br>
-        <p>Java previous to JDK 9 has a visibility concept that does not support modules very well.
-           If modules are structured into various packages, and only dedicated packages should be exported to other modules, the visibilty modifiers do not fit at all. All public classes can be imported to other modules.<br>
-           With JDK 9 JPMS was introduced to solve this issue. Using JPMS in a project is not an easy task and sometimes even not possible due to runtime restrictions.
-           This is where <a href="https://github.com/frimtec/import-control/blob/main/README.md">Import Control</a> comes to rescue. It fully supports the need for import control between modules but with no runtime impact nor restrictions.
-           Packages of modules that shall be exported to other modules can be annotated with <i>@ExportPackage</i> (or any other annotation of your choice). While editing in the IDE imports to non exported classes from other modules are immediatly marked as errors.</p>
-    ]]></description>
-
     <depends>com.intellij.modules.platform</depends>
     <depends>com.intellij.modules.java</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <inspectionToolProvider
-                implementation="com.github.frimtec.idea.plugin.importcontrol.ImportControlInspectionToolProvider"/>
+        <localInspection language="JAVA"
+                         displayName="Import/reference of module private classes"
+                         groupName="Visibility"
+                         groupPath="Java"
+                         enabledByDefault="false"
+                         level="ERROR"
+                         implementationClass="com.github.frimtec.idea.plugin.importcontrol.ImportControlInspection"/>
     </extensions>
 </idea-plugin>
