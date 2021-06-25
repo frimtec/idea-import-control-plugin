@@ -3,6 +3,7 @@
 # Import Control Plugin Changelog
 
 ## [Unreleased]
+## [1.2.0-alpha-2]
 ### Changed
 
 ## [1.1.3]
