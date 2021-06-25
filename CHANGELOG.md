@@ -3,8 +3,9 @@
 # Import Control Plugin Changelog
 
 ## [Unreleased]
-## [1.2.0-alpha-2]
 ### Changed
+- Migrated to gradle-intellij-plugin 1.0
+- Simplified plugin code
 
 ## [1.1.3]
 ### Added
