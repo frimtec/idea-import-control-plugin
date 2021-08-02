@@ -3,6 +3,9 @@
 # Import Control Plugin Changelog
 
 ## [Unreleased]
+### Added
+- Support for Idea 2021.2
+
 ## [1.2.0]
 ### Changed
 - Migrated to gradle-intellij-plugin 1.0
