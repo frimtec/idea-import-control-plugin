@@ -196,6 +196,18 @@ jobs:
           path: ${{ steps.properties.outputs.pluginVerifierHomeDir }}/ides
           key: ${{ runner.os }}-plugin-verifier-${{ steps.properties.outputs.ideVersions }}
 
-      # Run IntelliJ Plugin Verifier action using GitHub Action
+      # Run Qodana inspections
+      - name: Qodana - Code Inspection
+        uses: JetBrains/qodana-action@v2.1-eap
+
+      # Run tests
+      - name: Run Tests
+        run: ./gradlew test
+
+      # Run verifyPlugin Gradle task
       - name: Verify Plugin
+        run: ./gradlew verifyPlugin
+
+      # Run IntelliJ Plugin Verifier action using GitHub Action
+      - name: Run Plugin Verifier
         run: ./gradlew runPluginVerifier -Pplugin.verifier.home.dir=${{ steps.properties.outputs.pluginVerifierHomeDir }}
