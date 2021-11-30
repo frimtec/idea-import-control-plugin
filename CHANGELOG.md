@@ -3,6 +3,9 @@
 # Import Control Plugin Changelog
 
 ## [Unreleased]
+### Added
+- Support for Idea 2021.3
+
 ## [1.2.1]
 ### Added
 - Support for Idea 2021.2
