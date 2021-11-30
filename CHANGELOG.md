@@ -3,6 +3,8 @@
 # Import Control Plugin Changelog
 
 ## [Unreleased]
+
+## [1.2.2]
 ### Added
 - Support for Idea 2021.3
 
@@ -40,5 +42,3 @@
 - Fix NPE
 
 ## [1.0.0]
-### Added
-Inital version
