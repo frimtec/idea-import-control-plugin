@@ -3,12 +3,9 @@
 # Import Control Plugin Changelog
 
 ## [Unreleased]
-- Fixed potential NPE if package does not exist inside inspected project
-- Update `platformVersion` to `2021.3.2`
-- Change since/until build to `211-221.*`
-- Upgrade Gradle Wrapper to `7.4`
-- Dependencies - upgrade `org.jetbrains.intellij` to `1.4.0`
-- Dependencies (GitHub Actions) - upgrade `JetBrains/qodana-action` to `4.2.5`
+
+## [1.2.3]
+Test
 
 ## [1.2.2]
 ### Added
