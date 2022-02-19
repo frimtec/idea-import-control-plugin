@@ -3,6 +3,8 @@
 # Import Control Plugin Changelog
 
 ## [Unreleased]
+
+## [1.2.3]
 - Fixed potential NPE if package does not exist inside inspected project
 - Update `platformVersion` to `2021.3.2`
 - Change since/until build to `211-221.*`
