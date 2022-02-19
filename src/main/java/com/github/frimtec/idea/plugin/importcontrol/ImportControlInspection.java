@@ -2,7 +2,6 @@ package com.github.frimtec.idea.plugin.importcontrol;
 
 import com.github.frimtec.idea.plugin.importcontrol.OptionDialogHelper.Option;
 import com.github.frimtec.libraries.importcontrol.api.ExportPackage;
-import com.intellij.codeHighlighting.HighlightDisplayLevel;
 import com.intellij.codeInspection.LocalInspectionTool;
 import com.intellij.codeInspection.ProblemsHolder;
 import com.intellij.openapi.diagnostic.Logger;
@@ -10,7 +9,6 @@ import com.intellij.openapi.module.Module;
 import com.intellij.openapi.module.ModuleUtilCore;
 import com.intellij.psi.*;
 import org.jdom.Element;
-import org.jetbrains.annotations.Nls;
 import org.jetbrains.annotations.NonNls;
 import org.jetbrains.annotations.NotNull;
 
@@ -54,7 +52,6 @@ public class ImportControlInspection extends LocalInspectionTool {
 
     @NotNull
     @Override
-    @SuppressWarnings("MethodDoesntCallSuperMethod")
     public JavaElementVisitor buildVisitor(@NotNull ProblemsHolder holder, boolean isOnTheFly) {
         return new JavaElementVisitor() {
 
@@ -78,20 +75,37 @@ public class ImportControlInspection extends LocalInspectionTool {
                     optionalPackageName.ifPresentOrElse(
                             packageName -> {
                                 if (isMonitored(inspectionOptions, packageName) && isOtherModule(reference, psiClass)) {
-                                    PsiModifierList annotationList = JavaPsiFacade.getInstance(holder.getProject()).findPackage(packageName).getAnnotationList();
-                                    if (annotationList == null || !annotationList.hasAnnotation(inspectionOptions.getExportAnnotation())) {
-                                        Module moduleForFile = ModuleUtilCore.findModuleForFile(psiClass.getContainingFile());
-                                        holder.registerProblem(reference, String.format(
-                                                "'%s' is module private and not allowed to use outside its module '%s'",
-                                                psiClass.getName(),
-                                                moduleForFile != null ? moduleForFile.getName() : "<unknown>"
+                                    PsiPackage foundPackage = JavaPsiFacade.getInstance(holder.getProject()).findPackage(packageName);
+                                    if (foundPackage != null) {
+                                        PsiModifierList annotationList = foundPackage.getAnnotationList();
+                                        if (annotationList == null || !annotationList.hasAnnotation(inspectionOptions.getExportAnnotation())) {
+                                            Module moduleForFile = ModuleUtilCore.findModuleForFile(psiClass.getContainingFile());
+                                            holder.registerProblem(reference, String.format(
+                                                            "'%s' is module private and not allowed to use outside its module '%s'",
+                                                            psiClass.getName(),
+                                                            moduleForFile != null ? moduleForFile.getName() : "<unknown>"
+                                                    )
+                                            );
+                                        }
+                                    } else {
+                                        LOGGER.warn(
+                                                String.format(
+                                                        "PsiClass element with missing package => reference ignored; PsiClass type: %s, PsiClass name: %s, Text: %s",
+                                                        psiClass.getClass(),
+                                                        psiClass.getName(),
+                                                        psiClass.getText()
                                                 )
                                         );
                                     }
                                 }
                             },
-                            () -> LOGGER.warn(String.format("PsiClass element with no package => reference ignored; PsiClass type: %s, PsiClass name: %s, Text: %s",
-                                    psiClass.getClass(), psiClass.getName(), psiClass.getText())
+                            () -> LOGGER.warn(
+                                    String.format(
+                                            "PsiClass element with no package => reference ignored; PsiClass type: %s, PsiClass name: %s, Text: %s",
+                                            psiClass.getClass(),
+                                            psiClass.getName(),
+                                            psiClass.getText()
+                                    )
                             ));
                 }
             }
@@ -112,10 +126,15 @@ public class ImportControlInspection extends LocalInspectionTool {
             private boolean isOtherModule(PsiJavaCodeReferenceElement reference, PsiClass psiClass) {
                 Module moduleCaller = ModuleUtilCore.findModuleForFile(reference.getContainingFile());
                 Module moduleCallee = ModuleUtilCore.findModuleForFile(psiClass.getContainingFile());
-                if(moduleCaller == null) {
-                  LOGGER.warn(String.format("Caller reference not in module => reference ignored; Name: %s, Text: %s",
-                          reference.getQualifiedName(), reference.getText()));
-                  return false;            
+                if (moduleCaller == null) {
+                    LOGGER.warn(
+                            String.format(
+                                    "Caller reference not in module => reference ignored; Name: %s, Text: %s",
+                                    reference.getQualifiedName(),
+                                    reference.getText()
+                            )
+                    );
+                    return false;
                 }
                 return !moduleCaller.equals(moduleCallee);
             }
@@ -137,7 +156,6 @@ public class ImportControlInspection extends LocalInspectionTool {
     }
 
     @Override
-    @SuppressWarnings("MethodDoesntCallSuperMethod")
     public JComponent createOptionsPanel() {
         return OptionDialogHelper.createOptionsPanel(this.options);
     }
