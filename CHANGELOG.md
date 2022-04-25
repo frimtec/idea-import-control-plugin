@@ -3,6 +3,8 @@
 # Import Control Plugin Changelog
 
 ## [Unreleased]
+
+## [1.2.4]
 - Update `platformVersion` to `2022.1`
 - Dependencies - upgrade `org.jetbrains.intellij` to `1.5.3`
 
