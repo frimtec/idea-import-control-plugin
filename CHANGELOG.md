@@ -3,6 +3,8 @@
 # Import Control Plugin Changelog
 
 ## [Unreleased]
+- Update `platformVersion` to `2022.1`
+- Dependencies - upgrade `org.jetbrains.intellij` to `1.5.3`
 
 ## [1.2.3]
 - Fixed potential NPE if package does not exist inside inspected project
