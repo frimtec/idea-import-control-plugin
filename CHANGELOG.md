@@ -3,6 +3,7 @@
 # Import Control Plugin Changelog
 
 ## [Unreleased]
+- Support `platformVersion` until `2022.2`
 
 ## [1.2.4]
 - Update `platformVersion` to `2022.1`
