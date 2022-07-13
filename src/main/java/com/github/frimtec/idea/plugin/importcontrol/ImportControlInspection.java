@@ -69,8 +69,7 @@ public class ImportControlInspection extends LocalInspectionTool {
 
             private void analyseReference(PsiJavaCodeReferenceElement reference) {
                 PsiElement psiElement = reference.resolve();
-                if (psiElement instanceof PsiClass && !isTypeIgnored(psiElement)) {
-                    PsiClass psiClass = (PsiClass) psiElement;
+                if (psiElement instanceof PsiClass psiClass && !isTypeIgnored(psiElement)) {
                     Optional<String> optionalPackageName = findPackageName(psiClass);
                     optionalPackageName.ifPresentOrElse(
                             packageName -> {
