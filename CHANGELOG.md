@@ -3,6 +3,10 @@
 # Import Control Plugin Changelog
 
 ## [Unreleased]
+### Fixed
+- Compiled classed back to Java 11
+### Added
+- Support for Idea 2022.2
 
 ## [1.2.5]
 - Support `platformVersion` until `2022.2`
