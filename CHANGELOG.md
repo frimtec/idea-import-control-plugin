@@ -3,13 +3,8 @@
 # Import Control Plugin Changelog
 
 ## [Unreleased]
-### Fixed
-- Compiled classed back to Java 11
 ### Added
-- Support for Idea 2022.2
-
-## [1.2.5]
-- Support `platformVersion` until `2022.2`
+- Support plaftorm 2022.2 with JDK 17
 
 ## [1.2.4]
 - Update `platformVersion` to `2022.1`
