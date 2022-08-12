@@ -3,8 +3,12 @@
 # Import Control Plugin Changelog
 
 ## [Unreleased]
+### Changed
+- Migrate to intellij-platform-plugin-template 1.2.0
+
+## [1.3.0]
 ### Added
-- Support plaftorm 2022.2 with JDK 17
+- Support platform 2022.2 with JDK 17
 
 ## [1.2.4]
 - Update `platformVersion` to `2022.1`
