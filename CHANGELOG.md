@@ -4,6 +4,7 @@
 
 ## [Unreleased]
 ### Changed
+- Support platform 2022.3
 - Migrate to intellij-platform-plugin-template 1.2.0
 
 ## [1.3.0]
