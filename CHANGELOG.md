@@ -3,7 +3,8 @@
 # Import Control Plugin Changelog
 
 ## [Unreleased]
-### Changed
+
+## [1.3.1]
 - Support platform 2022.3
 - Migrate to intellij-platform-plugin-template 1.2.0
 
