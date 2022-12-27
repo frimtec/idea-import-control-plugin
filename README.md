@@ -53,7 +53,7 @@ Defines root package (or several if separated by ';') of your multi-module proje
 
 [license-shield]: https://img.shields.io/github/license/frimtec/idea-import-control-plugin.svg
 [license]: https://opensource.org/licenses/Apache-2.0
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2022.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2023.svg
 [build-status-shield]: https://github.com/frimtec/idea-import-control-plugin/workflows/Build/badge.svg
 [build-status]: https://github.com/frimtec/idea-import-control-plugin/actions?query=workflow%3ABuild
 [deploy-status-shield]: https://github.com/frimtec/idea-import-control-plugin/workflows/Deploy%20release/badge.svg
