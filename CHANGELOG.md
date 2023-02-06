@@ -3,6 +3,7 @@
 # Import Control Plugin Changelog
 
 ## [Unreleased]
+- Support platform 2023.1
 
 ## [1.3.1]
 - Support platform 2022.3
