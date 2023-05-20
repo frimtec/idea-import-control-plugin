@@ -4,6 +4,10 @@
 
 ## [Unreleased]
 
+## [1.6.0] - 2023-05-20
+- Support platform 2023.2
+- Migrate to intellij-platform-plugin-template 1.5.0
+
 ## [1.3.2] - 2023-02-06
 - Support platform 2023.1
 - Migrate to intellij-platform-plugin-template 1.4.0
@@ -77,7 +81,8 @@
 
 ## [1.0.0]
 
-[Unreleased]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.3.2...HEAD
+[Unreleased]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.6.0...HEAD
+[1.6.0]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.3.2...v1.6.0
 [1.3.2]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.3.1...v1.3.2
 [1.3.1]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.3.0...v1.3.1
 [1.3.0]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.2.4...v1.3.0
