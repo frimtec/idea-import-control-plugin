@@ -56,13 +56,13 @@ public class ImportControlInspection extends LocalInspectionTool {
         return new JavaElementVisitor() {
 
             @Override
-            public void visitReferenceElement(PsiJavaCodeReferenceElement reference) {
+            public void visitReferenceElement(@NotNull PsiJavaCodeReferenceElement reference) {
                 super.visitReferenceElement(reference);
                 analyseReference(reference);
             }
 
             @Override
-            public void visitReferenceExpression(PsiReferenceExpression expression) {
+            public void visitReferenceExpression(@NotNull PsiReferenceExpression expression) {
                 super.visitReferenceExpression(expression);
                 analyseReference(expression);
             }
