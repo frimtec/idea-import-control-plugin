@@ -172,6 +172,8 @@ jobs:
         uses: JetBrains/qodana-action@v2023.1.5
         with:
           cache-default-branch-only: true
+        env:
+          QODANA_TOKEN: ${{ secrets.QODANA_TOKEN }}
 
   # Prepare a draft release for GitHub Releases page for the manual verification
   # If accepted and published, release workflow would be triggered
