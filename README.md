@@ -56,8 +56,8 @@ Defines root package (or several if separated by ';') of your multi-module proje
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2023.svg
 [build-status-shield]: https://github.com/frimtec/idea-import-control-plugin/workflows/Build/badge.svg
 [build-status]: https://github.com/frimtec/idea-import-control-plugin/actions?query=workflow%3ABuild
-[deploy-status-shield]: https://github.com/frimtec/idea-import-control-plugin/workflows/Deploy%20release/badge.svg
-[deploy-status]: https://github.com/frimtec/idea-import-control-plugin/actions?query=workflow%3A%22Deploy+release%22
+[deploy-status-shield]: https://github.com/frimtec/idea-import-control-plugin/actions/workflows/release.yml/badge.svg
+[deploy-status]: https://github.com/frimtec/idea-import-control-plugin/actions/workflows/release.yml
 [jetbrains-plugin-release-shield]: https://img.shields.io/jetbrains/plugin/v/15308 
 [jetbrains-plugin-download-shield]: https://img.shields.io/jetbrains/plugin/d/15308
 [jetbrains-plugin]: https://plugins.jetbrains.com/plugin/15308-import-control
