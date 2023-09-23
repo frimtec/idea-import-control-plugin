@@ -4,28 +4,64 @@
 
 ## [Unreleased]
 
+## [1.6.1] - 2023-09-23
+
+- Migrate to intellij-platform-plugin-template 1.11.1
+- Bump to idea 2023.3
+- Bump org.jetbrains.intellij from 1.13.3 to 1.14.0
+- Bump org.jetbrains.changelog from 2.0.0 to 2.1.0
+- Bump org.jetbrains.kotlin.jvm from 1.8.21 to 1.8.22
+- Bump org.jetbrains.intellij from 1.14.0 to 1.14.1
+- Bump JetBrains/qodana-action from 2023.1.0 to 2023.1.4
+- Bump JetBrains/qodana-action from 2023.1.4 to 2023.1.5
+- Bump release-drafter/release-drafter from 5.23.0 to 5.24.0
+- Bump org.jetbrains.intellij from 1.14.1 to 1.14.2
+- Bump org.jetbrains.kotlin.jvm from 1.8.22 to 1.9.0
+- Bump org.jetbrains.intellij from 1.14.2 to 1.15.0
+- Bump org.jetbrains.changelog from 2.1.0 to 2.1.1
+- Bump org.jetbrains.changelog from 2.1.1 to 2.1.2
+- Bump gradle/gradle-build-action from 2.5.1 to 2.6.0
+- Bump gradle/gradle-build-action from 2.6.0 to 2.6.1
+- Bump JetBrains/qodana-action from 2023.1.5 to 2023.2.1
+- Bump gradle/wrapper-validation-action from 1.0.6 to 1.1.0
+- Bump org.jetbrains.kotlinx.kover from 0.7.2 to 0.7.3
+- Bump gradle/gradle-build-action from 2.6.1 to 2.7.0
+- Bump org.gradle.toolchains.foojay-resolver-convention from 0.6.0 to 0.7.0
+- Bump gradle/gradle-build-action from 2.7.0 to 2.7.1
+- Bump org.jetbrains.kotlin.jvm from 1.9.0 to 1.9.10
+- Bump org.jetbrains.changelog from 2.1.2 to 2.2.0
+- Bump gradle/gradle-build-action from 2.7.1 to 2.8.0
+- Bump JetBrains/qodana-action from 2023.2.1 to 2023.2.6
+- Bump actions/checkout from 3 to 4
+
 ## [1.6.0] - 2023-05-20
+
 - Support platform 2023.2
 - Migrate to intellij-platform-plugin-template 1.5.0
 
 ## [1.3.2] - 2023-02-06
+
 - Support platform 2023.1
 - Migrate to intellij-platform-plugin-template 1.4.0
 
 ## [1.3.1]
+
 - Support platform 2022.3
 - Migrate to intellij-platform-plugin-template 1.2.0
 
 ## [1.3.0]
 
 ### Added
+
 - Support platform 2022.2 with JDK 17
 
 ## [1.2.4]
+
 - Update `platformVersion` to `2022.1`
 - Dependencies - upgrade `org.jetbrains.intellij` to `1.5.3`
 
 ## [1.2.3]
+
 - Fixed potential NPE if package does not exist inside inspected project
 - Update `platformVersion` to `2021.3.2`
 - Change since/until build to `211-221.*`
@@ -36,52 +72,62 @@
 ## [1.2.2]
 
 ### Added
+
 - Support for Idea 2021.3
 
 ## [1.2.1]
 
 ### Added
+
 - Support for Idea 2021.2
 
 ## [1.2.0]
 
 ### Changed
+
 - Migrated to gradle-intellij-plugin 1.0
 - Simplified plugin code
 
 ## [1.1.3]
 
 ### Added
+
 - Support for Idea 2021.1
 
 ## [1.1.2]
 
 ### Fixed
+
 - Fix NPE
 
 ## [1.1.1]
 
 ### Added
+
 - Build by fully automated release workflow (same content as release 1.1.0)
 
 ## [1.1.0]
 
 ### Added
+
 - Support for Idea 2020.3
 
 ## [1.0.2]
 
 ### Fixed
+
 - Fix various exceptions
 
 ## [1.0.1]
 
 ### Fixed
+
 - Fix NPE
 
 ## [1.0.0]
 
-[Unreleased]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.6.0...HEAD
+[Unreleased]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.6.1...HEAD
+[1.6.1]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.6.0...v1.6.1
 [1.6.0]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.3.2...v1.6.0
 [1.3.2]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.3.1...v1.3.2
 [1.3.1]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.3.0...v1.3.1
