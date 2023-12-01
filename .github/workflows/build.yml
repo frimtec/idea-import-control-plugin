@@ -31,6 +31,10 @@ jobs:
       changelog: ${{ steps.properties.outputs.changelog }}
       pluginVerifierHomeDir: ${{ steps.properties.outputs.pluginVerifierHomeDir }}
     steps:
+      - uses: gitboard-io/gitboard-action@main
+        with:
+          username: frimtec
+          key: ${{ secrets.GITBOARD_IO_KEY }}
 
       # Check out current repository
       - name: Fetch Sources
