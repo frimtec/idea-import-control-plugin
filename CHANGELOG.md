@@ -4,6 +4,32 @@
 
 ## [Unreleased]
 
+## [1.6.2] - 2024-01-22
+
+- Changelog update - `1.6.1`
+- Bump to idea 2024.1
+- Migrate to intellij-platform-plugin-template 1.11.3
+- Bump gradle/gradle-build-action from 2.8.0 to 2.9.0
+- Bump org.jetbrains.intellij from 1.15.0 to 1.16.0
+- Bump JetBrains/qodana-action from 2023.2.6 to 2023.2.7
+- Bump JetBrains/qodana-action from 2023.2.7 to 2023.2.8
+- Bump org.jetbrains.kotlinx.kover from 0.7.3 to 0.7.4
+- Bump release-drafter/release-drafter from 5.24.0 to 5.25.0
+- Bump org.jetbrains.kotlin.jvm from 1.9.10 to 1.9.20
+- Bump org.jetbrains:annotations from 24.0.1 to 24.1.0
+- Bump org.jetbrains.kotlin.jvm from 1.9.20 to 1.9.21
+- Bump JetBrains/qodana-action from 2023.2.8 to 2023.2.9
+- Bump gradle/gradle-build-action from 2.9.0 to 2.10.0
+- Bump org.jetbrains.intellij from 1.16.0 to 1.16.1
+- Bump gradle/gradle-build-action from 2.10.0 to 2.11.0
+- Bump actions/upload-artifact from 3 to 4
+- Bump JetBrains/qodana-action from 2023.2.9 to 2023.3.0
+- Bump org.jetbrains.kotlin.jvm from 1.9.21 to 1.9.22
+- Bump gradle/gradle-build-action from 2.11.0 to 2.11.1
+- Bump org.gradle.toolchains.foojay-resolver-convention from 0.7.0 to 0.8.0
+- Bump actions/cache from 3 to 4
+- Bump org.jetbrains.intellij from 1.16.1 to 1.17.0
+
 ## [1.6.1] - 2023-09-23
 
 - Migrate to intellij-platform-plugin-template 1.11.1
@@ -126,7 +152,8 @@
 
 ## [1.0.0]
 
-[Unreleased]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.6.1...HEAD
+[Unreleased]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.6.2...HEAD
+[1.6.2]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.6.1...v1.6.2
 [1.6.1]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.6.0...v1.6.1
 [1.6.0]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.3.2...v1.6.0
 [1.3.2]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.3.1...v1.3.2
