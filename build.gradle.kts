@@ -29,7 +29,7 @@ dependencies {
     implementation("com.github.frimtec:import-control-api:1.1.1")
 }
 
-// Set the JVM language level used to build the project. Use Java 11 for 2020.3+, and Java 17 for 2022.2+.
+// Set the JVM language level used to build the project.
 kotlin {
     jvmToolchain(Integer.parseInt(properties("javaVersion").get()))
 }
@@ -48,14 +48,6 @@ intellij {
 changelog {
     groups.empty()
     repositoryUrl.set(properties("pluginRepositoryUrl"))
-}
-
-// Configure Gradle Qodana Plugin - read more: https://github.com/JetBrains/gradle-qodana-plugin
-qodana {
-    cachePath.set(provider { file(".qodana").canonicalPath })
-    reportPath.set(provider { file("build/reports/inspections").canonicalPath })
-    saveReport.set(true)
-    showReport.set(environment("QODANA_SHOW_REPORT").map { it.toBoolean() }.getOrElse(false))
 }
 
 tasks {
@@ -116,6 +108,6 @@ tasks {
         // The pluginVersion is based on the SemVer (https://semver.org) and supports pre-release labels, like 2.1.7-alpha.3
         // Specify pre-release label to publish the plugin in a custom Release Channel automatically. Read more:
         // https://plugins.jetbrains.com/docs/intellij/deployment.html#specifying-a-release-channel
-        channels = properties("pluginVersion").map { listOf(it.substringAfter('-').substringBefore('.').ifEmpty { "default" }) }
+        channels = properties("pluginVersion").map { listOf(it.substringAfter('-', "").substringBefore('.').ifEmpty { "default" }) }
     }
 }
