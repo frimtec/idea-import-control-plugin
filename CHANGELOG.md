@@ -4,6 +4,12 @@
 
 ## [Unreleased]
 
+## [1.7.0] - 2024-09-27
+
+- Support Platform 2024.3
+- Bump JDK from 17 to 21
+- Migrate to IntelliJ Platform Gradle Plugin 2.0.0
+
 ## [1.6.3] - 2024-06-01
 
 - Migrate to intellij-platform-plugin-template 1.12.0
@@ -159,7 +165,8 @@
 
 ## [1.0.0]
 
-[Unreleased]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.6.3...HEAD
+[Unreleased]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.7.0...HEAD
+[1.7.0]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.6.3...v1.7.0
 [1.6.3]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.6.2...v1.6.3
 [1.6.2]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.6.1...v1.6.2
 [1.6.1]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.6.0...v1.6.1
