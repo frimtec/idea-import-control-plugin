@@ -4,6 +4,10 @@
 
 ## [Unreleased]
 
+## [1.7.2] - 2025-01-17
+
+- Fix settings reset on plugin update while project is open
+
 ## [1.7.1] - 2025-01-17
 
 - Support platform 2025.1
@@ -169,7 +173,8 @@
 
 ## [1.0.0]
 
-[Unreleased]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.7.1...HEAD
+[Unreleased]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.7.2...HEAD
+[1.7.2]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.7.1...v1.7.2
 [1.7.1]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.7.0...v1.7.1
 [1.7.0]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.6.3...v1.7.0
 [1.6.3]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.6.2...v1.6.3
