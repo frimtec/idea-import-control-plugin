@@ -50,6 +50,13 @@ public class ImportControlInspection extends LocalInspectionTool {
         this.inspectionOptions = InspectionOptions.of(this.exportAnnotation, this.rootPackages);
     }
 
+    @Override
+    public void writeSettings(@NotNull Element node) {
+        this.exportAnnotation = this.inspectionOptions.getExportAnnotation();
+        this.rootPackages = String.join(";", this.inspectionOptions.getRootPackages());
+        super.writeSettings(node);
+    }
+
     @NotNull
     @Override
     public JavaElementVisitor buildVisitor(@NotNull ProblemsHolder holder, boolean isOnTheFly) {
