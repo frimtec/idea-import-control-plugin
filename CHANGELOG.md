@@ -4,6 +4,14 @@
 
 ## [Unreleased]
 
+## [1.7.4] - 2025-05-01
+
+- Support platform 2025.2 @frimtec
+- Migrate to intellij-platform-plugin-template 2.1.0
+- Bump org.jetbrains.intellij.platform from 2.2.0 to 2.3.0
+- Bump org.jetbrains.intellij.platform from 2.3.0 to 2.4.0
+- Bump org.jetbrains.intellij.platform from 2.4.0 to 2.5.0
+
 ## [1.7.3] - 2025-01-17
 
 - Fix settings reset on plugin update while project is open
@@ -177,7 +185,8 @@
 
 ## [1.0.0]
 
-[Unreleased]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.7.3...HEAD
+[Unreleased]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.7.4...HEAD
+[1.7.4]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.7.3...v1.7.4
 [1.7.3]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.7.2...v1.7.3
 [1.7.2]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.7.1...v1.7.2
 [1.7.1]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.7.0...v1.7.1
