@@ -31,7 +31,7 @@ repositories {
 
 // Dependencies are managed with Gradle version catalog - read more: https://docs.gradle.org/current/userguide/platforms.html#sub:version-catalog
 dependencies {
-    implementation("com.github.frimtec:import-control-api:1.1.2")
+    implementation("com.github.frimtec:import-control-api:1.2.0")
     testImplementation(libs.junit)
     testImplementation(libs.opentest4j)
 
