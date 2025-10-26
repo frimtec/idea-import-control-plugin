@@ -1,9 +1,7 @@
 [versions]
-# libraries
-junit = "4.13.2"
-opentest4j = "1.3.0"
 
-# plugins
+importControlApi = "1.2.0"
+
 changelog = "2.4.0"
 intelliJPlatform = "2.10.1"
 kotlin = "2.2.20"
@@ -11,8 +9,7 @@ kover = "0.9.3"
 qodana = "2025.2.1"
 
 [libraries]
-junit = { group = "junit", name = "junit", version.ref = "junit" }
-opentest4j = { group = "org.opentest4j", name = "opentest4j", version.ref = "opentest4j" }
+importControlApi = { group = "com.github.frimtec", name = "import-control-api", version.ref = "importControlApi" }
 
 [plugins]
 changelog = { id = "org.jetbrains.changelog", version.ref = "changelog" }
