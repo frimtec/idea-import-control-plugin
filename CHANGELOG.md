@@ -4,6 +4,27 @@
 
 ## [Unreleased]
 
+## [1.7.5] - 2025-12-01
+
+- Update pluginUntilBuild to support version 253.*
+- Bump org.jetbrains.qodana from 2025.1.0 to 2025.1.1
+- Bump com.github.frimtec:import-control-api from 1.1.1 to 1.1.2
+- Bump org.jetbrains.kotlin.jvm from 2.1.20 to 2.1.21
+- Bump org.jetbrains.intellij.platform from 2.5.0 to 2.6.0
+- Bump org.jetbrains.kotlin.jvm from 2.1.21 to 2.2.0
+- Bump org.jetbrains.intellij.platform from 2.6.0 to 2.7.0
+- Bump org.jetbrains.intellij.platform from 2.7.0 to 2.7.1
+- Bump org.jetbrains.intellij.platform from 2.7.1 to 2.7.2
+- Bump org.jetbrains.kotlin.jvm from 2.2.0 to 2.2.10
+- Bump org.jetbrains.intellij.platform from 2.7.2 to 2.9.0
+- Bump org.jetbrains.kotlin.jvm from 2.2.10 to 2.2.20
+- Bump com.github.frimtec:import-control-api from 1.1.2 to 1.2.0
+- Bump org.jetbrains.intellij.platform from 2.9.0 to 2.10.1
+- Bump org.jetbrains.kotlin.jvm from 2.2.20 to 2.2.21
+- Bump org.jetbrains.intellij.platform from 2.10.1 to 2.10.2
+- Bump org.jetbrains.intellij.platform from 2.10.2 to 2.10.4
+- Bump org.jetbrains.intellij.platform from 2.10.4 to 2.10.5
+
 ## [1.7.4] - 2025-05-01
 
 - Support platform 2025.2 @frimtec
@@ -185,7 +206,8 @@
 
 ## [1.0.0]
 
-[Unreleased]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.7.4...HEAD
+[Unreleased]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.7.5...HEAD
+[1.7.5]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.7.4...v1.7.5
 [1.7.4]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.7.3...v1.7.4
 [1.7.3]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.7.2...v1.7.3
 [1.7.2]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.7.1...v1.7.2
