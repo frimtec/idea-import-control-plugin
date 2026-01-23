@@ -4,6 +4,20 @@
 
 ## [Unreleased]
 
+## [1.7.6] - 2026-01-23
+
+- Changelog update - `1.7.5`
+- Fix false positives for JAR dependencies since IDEA 2025.3
+- Bump dev platform to 2025.3
+- Add maintenance support for 2026
+- Bump org.jetbrains.kotlinx.kover from 0.9.3 to 0.9.4
+- Bump actions/upload-artifact from 5 to 6
+- Bump JetBrains/qodana-action from 2025.2.2 to 2025.2.4
+- Bump actions/cache from 4 to 5
+- Bump org.jetbrains.qodana from 2025.2.2 to 2025.2.4
+- Bump JetBrains/qodana-action from 2025.2.4 to 2025.3.1
+- Bump org.jetbrains.kotlin.jvm from 2.2.21 to 2.3.0
+
 ## [1.7.5] - 2025-12-01
 
 - Update pluginUntilBuild to support version 253.*
@@ -206,7 +220,8 @@
 
 ## [1.0.0]
 
-[Unreleased]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.7.5...HEAD
+[Unreleased]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.7.6...HEAD
+[1.7.6]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.7.5...v1.7.6
 [1.7.5]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.7.4...v1.7.5
 [1.7.4]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.7.3...v1.7.4
 [1.7.3]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.7.2...v1.7.3
