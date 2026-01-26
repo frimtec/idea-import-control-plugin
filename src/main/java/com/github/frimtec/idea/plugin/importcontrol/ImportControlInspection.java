@@ -8,6 +8,7 @@ import com.intellij.openapi.diagnostic.Logger;
 import com.intellij.openapi.module.Module;
 import com.intellij.openapi.module.ModuleUtilCore;
 import com.intellij.psi.*;
+import com.intellij.psi.search.GlobalSearchScope;
 import org.jdom.Element;
 import org.jetbrains.annotations.NonNls;
 import org.jetbrains.annotations.NotNull;
@@ -82,24 +83,27 @@ public class ImportControlInspection extends LocalInspectionTool {
                     optionalPackageName.ifPresentOrElse(
                             packageName -> {
                                 if (isMonitored(inspectionOptions, packageName) && isOtherModule(reference, psiClass)) {
-                                    if (!hasAnnotationInPackage(psiClass, inspectionOptions.getExportAnnotation())) {
-                                        Module moduleForFile = ModuleUtilCore.findModuleForFile(psiClass.getContainingFile());
-                                        holder.registerProblem(reference, String.format(
-                                                        "'%s' is module private and not allowed to use outside its module '%s'",
+                                    PsiPackage foundPackage = JavaPsiFacade.getInstance(holder.getProject()).findPackage(packageName);
+                                    if (foundPackage != null) {
+                                        if (!hasAnnotationInPackage(foundPackage, inspectionOptions.getExportAnnotation())) {
+                                            Module moduleForFile = ModuleUtilCore.findModuleForFile(psiClass.getContainingFile());
+                                            holder.registerProblem(reference, String.format(
+                                                            "'%s' is module private and not allowed to use outside its module '%s'",
+                                                            psiClass.getName(),
+                                                            moduleForFile != null ? moduleForFile.getName() : "<unknown>"
+                                                    )
+                                            );
+                                        }
+                                    } else {
+                                        LOGGER.warn(
+                                                String.format(
+                                                        "PsiClass element with missing package => reference ignored; PsiClass type: %s, PsiClass name: %s, Text: %s",
+                                                        psiClass.getClass(),
                                                         psiClass.getName(),
-                                                        moduleForFile != null ? moduleForFile.getName() : "<unknown>"
+                                                        psiClass.getText()
                                                 )
                                         );
                                     }
-                                } else {
-                                    LOGGER.warn(
-                                            String.format(
-                                                    "PsiClass element with missing package => reference ignored; PsiClass type: %s, PsiClass name: %s, Text: %s",
-                                                    psiClass.getClass(),
-                                                    psiClass.getName(),
-                                                    psiClass.getText()
-                                            )
-                                    );
                                 }
                             },
                             () -> LOGGER.warn(
@@ -113,25 +117,19 @@ public class ImportControlInspection extends LocalInspectionTool {
                 }
             }
 
-            private boolean hasAnnotationInPackage(PsiClass psiClass, String annotationToCheckFor) {
+            private boolean hasAnnotationInPackage(PsiPackage psiPackage, String annotationToCheckFor) {
                 var found = new AtomicBoolean(false);
-                PsiFile containingFile = psiClass.getContainingFile();
-                if (containingFile == null) {
-                    LOGGER.warn(
-                            String.format(
-                                    "PsiClass element with no PsiFile => reference ignored; PsiClass type: %s, PsiClass name: %s, Text: %s",
-                                    psiClass.getClass(),
-                                    psiClass.getName(),
-                                    psiClass.getText()
-                            )
-                    );
-                    return false;
-                }
-                JavaPsiAnnotationUtil.processPackageAnnotations(containingFile, (annotation, superPackage) -> {
-                    if (annotationToCheckFor.equals(annotation.getQualifiedName())) {
-                        found.set(true);
+                PsiFile[] files = psiPackage.getFiles(GlobalSearchScope.allScope(psiPackage.getProject()));
+                for (PsiFile file : files) {
+                    JavaPsiAnnotationUtil.processPackageAnnotations(file, (annotation, superPackage) -> {
+                        if (annotationToCheckFor.equals(annotation.getQualifiedName())) {
+                            found.set(true);
+                        }
+                    }, false);
+                    if (found.get()) {
+                        break;
                     }
-                }, false);
+                }
                 return found.get();
             }
 
