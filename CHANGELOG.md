@@ -4,6 +4,10 @@
 
 ## [Unreleased]
 
+## [1.7.7] - 2026-01-26
+
+- Re-add support for multiple source folders of same package
+
 ## [1.7.6] - 2026-01-23
 
 - Changelog update - `1.7.5`
@@ -220,7 +224,8 @@
 
 ## [1.0.0]
 
-[Unreleased]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.7.6...HEAD
+[Unreleased]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.7.7...HEAD
+[1.7.7]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.7.6...v1.7.7
 [1.7.6]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.7.5...v1.7.6
 [1.7.5]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.7.4...v1.7.5
 [1.7.4]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.7.3...v1.7.4
