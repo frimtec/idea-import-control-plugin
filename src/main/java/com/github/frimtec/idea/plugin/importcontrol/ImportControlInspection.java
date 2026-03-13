@@ -4,6 +4,7 @@ import com.github.frimtec.idea.plugin.importcontrol.OptionDialogHelper.Option;
 import com.github.frimtec.libraries.importcontrol.api.ExportPackage;
 import com.intellij.codeInspection.LocalInspectionTool;
 import com.intellij.codeInspection.ProblemsHolder;
+import com.intellij.java.codeserver.core.JavaPsiAnnotationUtil;
 import com.intellij.openapi.diagnostic.Logger;
 import com.intellij.openapi.module.Module;
 import com.intellij.openapi.module.ModuleUtilCore;
