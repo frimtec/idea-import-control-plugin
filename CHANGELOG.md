@@ -4,6 +4,20 @@
 
 ## [Unreleased]
 
+## [1.8.0] - 2026-03-13
+
+- Changelog update - `1.7.7`
+- Add support for platform 2026.1
+- Bump gradle-wrapper from 8.13 to 9.3.0
+- Bump gradle-wrapper from 9.3.0 to 9.3.1
+- Bump org.jetbrains.intellij.platform from 2.10.5 to 2.11.0
+- Bump org.jetbrains.kotlinx.kover from 0.9.4 to 0.9.5
+- Bump org.jetbrains.kotlinx.kover from 0.9.5 to 0.9.6
+- Bump org.jetbrains.kotlin.jvm from 2.3.0 to 2.3.10
+- Bump org.jetbrains.kotlinx.kover from 0.9.6 to 0.9.7
+- Bump org.jetbrains.intellij.platform from 2.11.0 to 2.12.0
+- Bump gradle-wrapper from 9.3.1 to 9.4.0
+
 ## [1.7.7] - 2026-01-26
 
 - Re-add support for multiple source folders of same package
@@ -224,7 +238,8 @@
 
 ## [1.0.0]
 
-[Unreleased]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.7.7...HEAD
+[Unreleased]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.8.0...HEAD
+[1.8.0]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.7.7...v1.8.0
 [1.7.7]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.7.6...v1.7.7
 [1.7.6]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.7.5...v1.7.6
 [1.7.5]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.7.4...v1.7.5
