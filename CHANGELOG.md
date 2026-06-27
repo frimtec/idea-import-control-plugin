@@ -4,6 +4,26 @@
 
 ## [Unreleased]
 
+## [1.9.0] - 2026-06-27
+
+- Bump JDK to 25
+- Add support for platform 262
+- Bump org.jetbrains.intellij.platform from 2.12.0 to 2.13.1
+- Bump org.jetbrains.kotlin.jvm from 2.3.10 to 2.3.20
+- Bump org.jetbrains.qodana from 2025.2.4 to 2025.3.2
+- Bump gradle-wrapper from 9.4.0 to 9.4.1
+- Bump org.jetbrains.kotlinx.kover from 0.9.7 to 0.9.8
+- Bump org.jetbrains.intellij.platform from 2.13.1 to 2.14.0
+- Bump org.jetbrains.intellij.platform from 2.14.0 to 2.15.0
+- Bump org.jetbrains.kotlin.jvm from 2.3.20 to 2.3.21
+- Bump gradle-wrapper from 9.4.1 to 9.5.0
+- Bump org.jetbrains.qodana from 2025.3.2 to 2026.1.0
+- Bump org.jetbrains.intellij.platform from 2.15.0 to 2.16.0
+- Bump gradle-wrapper from 9.5.0 to 9.5.1
+- Bump org.jetbrains.kotlin.jvm from 2.3.21 to 2.4.0
+- Bump org.jetbrains.qodana from 2026.1.0 to 2026.1.3
+- Bump gradle-wrapper from 9.5.1 to 9.6.0
+
 ## [1.8.0] - 2026-03-13
 
 - Changelog update - `1.7.7`
@@ -238,32 +258,33 @@
 
 ## [1.0.0]
 
-[Unreleased]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.8.0...HEAD
-[1.8.0]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.7.7...v1.8.0
-[1.7.7]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.7.6...v1.7.7
-[1.7.6]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.7.5...v1.7.6
-[1.7.5]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.7.4...v1.7.5
-[1.7.4]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.7.3...v1.7.4
-[1.7.3]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.7.2...v1.7.3
-[1.7.2]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.7.1...v1.7.2
-[1.7.1]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.7.0...v1.7.1
-[1.7.0]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.6.3...v1.7.0
-[1.6.3]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.6.2...v1.6.3
-[1.6.2]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.6.1...v1.6.2
-[1.6.1]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.6.0...v1.6.1
-[1.6.0]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.3.2...v1.6.0
-[1.3.2]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.3.1...v1.3.2
-[1.3.1]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.3.0...v1.3.1
-[1.3.0]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.2.4...v1.3.0
-[1.2.4]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.2.3...v1.2.4
-[1.2.3]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.2.2...v1.2.3
-[1.2.2]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.2.1...v1.2.2
-[1.2.1]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.2.0...v1.2.1
-[1.2.0]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.1.3...v1.2.0
-[1.1.3]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.1.2...v1.1.3
-[1.1.2]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.1.1...v1.1.2
-[1.1.1]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.1.0...v1.1.1
-[1.1.0]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.0.2...v1.1.0
-[1.0.2]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.0.1...v1.0.2
-[1.0.1]: https://github.com/frimtec/idea-import-control-plugin/compare/v1.0.0...v1.0.1
-[1.0.0]: https://github.com/frimtec/idea-import-control-plugin/commits/v1.0.0
+[Unreleased]: https://github.com/frimtec/idea-import-control-plugin/compare/1.9.0...HEAD
+[1.9.0]: https://github.com/frimtec/idea-import-control-plugin/compare/1.8.0...1.9.0
+[1.8.0]: https://github.com/frimtec/idea-import-control-plugin/compare/1.7.7...1.8.0
+[1.7.7]: https://github.com/frimtec/idea-import-control-plugin/compare/1.7.6...1.7.7
+[1.7.6]: https://github.com/frimtec/idea-import-control-plugin/compare/1.7.5...1.7.6
+[1.7.5]: https://github.com/frimtec/idea-import-control-plugin/compare/1.7.4...1.7.5
+[1.7.4]: https://github.com/frimtec/idea-import-control-plugin/compare/1.7.3...1.7.4
+[1.7.3]: https://github.com/frimtec/idea-import-control-plugin/compare/1.7.2...1.7.3
+[1.7.2]: https://github.com/frimtec/idea-import-control-plugin/compare/1.7.1...1.7.2
+[1.7.1]: https://github.com/frimtec/idea-import-control-plugin/compare/1.7.0...1.7.1
+[1.7.0]: https://github.com/frimtec/idea-import-control-plugin/compare/1.6.3...1.7.0
+[1.6.3]: https://github.com/frimtec/idea-import-control-plugin/compare/1.6.2...1.6.3
+[1.6.2]: https://github.com/frimtec/idea-import-control-plugin/compare/1.6.1...1.6.2
+[1.6.1]: https://github.com/frimtec/idea-import-control-plugin/compare/1.6.0...1.6.1
+[1.6.0]: https://github.com/frimtec/idea-import-control-plugin/compare/1.3.2...1.6.0
+[1.3.2]: https://github.com/frimtec/idea-import-control-plugin/compare/1.3.1...1.3.2
+[1.3.1]: https://github.com/frimtec/idea-import-control-plugin/compare/1.3.0...1.3.1
+[1.3.0]: https://github.com/frimtec/idea-import-control-plugin/compare/1.2.4...1.3.0
+[1.2.4]: https://github.com/frimtec/idea-import-control-plugin/compare/1.2.3...1.2.4
+[1.2.3]: https://github.com/frimtec/idea-import-control-plugin/compare/1.2.2...1.2.3
+[1.2.2]: https://github.com/frimtec/idea-import-control-plugin/compare/1.2.1...1.2.2
+[1.2.1]: https://github.com/frimtec/idea-import-control-plugin/compare/1.2.0...1.2.1
+[1.2.0]: https://github.com/frimtec/idea-import-control-plugin/compare/1.1.3...1.2.0
+[1.1.3]: https://github.com/frimtec/idea-import-control-plugin/compare/1.1.2...1.1.3
+[1.1.2]: https://github.com/frimtec/idea-import-control-plugin/compare/1.1.1...1.1.2
+[1.1.1]: https://github.com/frimtec/idea-import-control-plugin/compare/1.1.0...1.1.1
+[1.1.0]: https://github.com/frimtec/idea-import-control-plugin/compare/1.0.2...1.1.0
+[1.0.2]: https://github.com/frimtec/idea-import-control-plugin/compare/1.0.1...1.0.2
+[1.0.1]: https://github.com/frimtec/idea-import-control-plugin/compare/1.0.0...1.0.1
+[1.0.0]: https://github.com/frimtec/idea-import-control-plugin/commits/1.0.0
