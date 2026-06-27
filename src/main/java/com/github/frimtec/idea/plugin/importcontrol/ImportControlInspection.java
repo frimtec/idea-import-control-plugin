@@ -122,8 +122,8 @@ public class ImportControlInspection extends LocalInspectionTool {
                 var found = new AtomicBoolean(false);
                 PsiFile[] files = psiPackage.getFiles(GlobalSearchScope.allScope(psiPackage.getProject()));
                 for (PsiFile file : files) {
-                    JavaPsiAnnotationUtil.processPackageAnnotations(file, (annotation, superPackage) -> {
-                        if (annotationToCheckFor.equals(annotation.getQualifiedName())) {
+                    JavaPsiAnnotationUtil.processPackageAnnotations(file, (annotations, _) -> {
+                        if (annotations.stream().anyMatch(annotation -> annotationToCheckFor.equals(annotation.getQualifiedName()))) {
                             found.set(true);
                         }
                     }, false);
