@@ -127,6 +127,10 @@ tasks {
     publishPlugin {
         dependsOn(patchChangelog)
     }
+
+    instrumentCode {
+        enabled = false
+    }
 }
 
 intellijPlatformTesting {
